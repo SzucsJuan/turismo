@@ -1,25 +1,54 @@
 import { Link } from "react-router-dom";
+import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaGoogle, } from "react-icons/fa";
 
 function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">
-          Turismo Up
-        </Link>
-        <div className="space-x-4">
-          <Link to="/" className="hover:underline">
-            Inicio
-          </Link>
-          <Link to="/destinos" className="hover:underline">
-            Destinos
-          </Link>
-          <Link to="/contacto" className="hover:underline">
-            Contacto
-          </Link>
+    <header className="w-full shadow-md">
+      {/* Barra superior */}
+      <div className="bg-petroleo text-white text-sm px-4 py-2 flex justify-between items-center">
+        <div className="flex items-center space-x-4 font-nunito">
+          <span className="flex items-center space-x-1">
+            <FaEnvelope className="text-sm" />
+            <span>turismoup@turismo.com</span>
+          </span>
+          <span className="flex items-center space-x-1">
+            <FaPhone className="text-sm" />
+            <span>+549-11-6758-2349</span>
+          </span>
+        </div>
+        <div className="flex space-x-4 pr-4 text-white text-sm">
+          <a href="#">
+            <FaGoogle />
+          </a>
+          <a href="#">
+            <FaFacebookF />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
         </div>
       </div>
-    </nav>
+
+      {/* Barra principal */}
+      <nav className="bg-white text-gray-800 px-6 py-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <Link to="/" className="text-2xl font-montserrat font-bold text-verde">
+            Turismo Up
+          </Link>
+          <div className="flex space-x-8 font-montserrat">
+            <Link to="/" className="hover:text-menta transition">
+              Inicio
+            </Link>
+            <Link to="/destinos" className="hover:text-menta transition">
+              Destinos
+            </Link>
+            <Link to="/contacto" className="hover:text-menta transition">
+              Contacto
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 }
 

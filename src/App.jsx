@@ -1,14 +1,14 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Inicio from './pages/Inicio';
-import Destinos from './pages/Destinos';
-import Contacto from './pages/Contacto';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Inicio from "./pages/Inicio";
+import Destinos from "./pages/Destinos";
+import Contacto from "./pages/Contacto";
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="p-4">
+      <div>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/destinos" element={<Destinos />} />

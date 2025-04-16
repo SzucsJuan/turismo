@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}", // Archivos .jsx para React
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        verde: '#2E8B57',
+        petroleo: '#00587A',
+        menta: '#B2F2BB',
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
