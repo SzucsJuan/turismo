@@ -35,14 +35,14 @@ function Navbar() {
           <Link to="/" className="text-2xl font-montserrat font-bold text-verde">
             Turismo Up
           </Link>
-          <div className="flex space-x-8 font-montserrat">
-            <Link to="/" className="hover:text-menta transition">
+          <div className="flex space-x-8 font-montserrat text-gris">
+            <Link to="/" className="hover:text-petroleoClaro transition">
               Inicio
             </Link>
-            <Link to="/destinos" className="hover:text-menta transition">
+            <Link to="/destinos" className="hover:text-petroleoClaro transition">
               Destinos
             </Link>
-            <Link to="/contacto" className="hover:text-menta transition">
+            <Link to="/contacto" className="hover:text-petroleoClaro transition">
               Contacto
             </Link>
           </div>

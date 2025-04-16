@@ -9,7 +9,8 @@ export default {
       colors: {
         verde: '#2E8B57',
         petroleo: '#00587A',
-        menta: '#B2F2BB',
+        petroleoClaro: '#4FA3B0',
+        gris: '#2B2B2B',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
