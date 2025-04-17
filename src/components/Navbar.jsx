@@ -17,14 +17,14 @@ function Navbar() {
           </span>
         </div>
         <div className="flex space-x-4 pr-4 text-white text-sm">
-          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
+          {/* <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
             <FaGoogle />
+          </a> */}
+          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
+            <FaInstagram />
           </a>
           <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
             <FaFacebookF />
-          </a>
-          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
-            <FaInstagram />
           </a>
         </div>
       </div>

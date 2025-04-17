@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Inicio from "./pages/Inicio";
 import Destinos from "./pages/Destinos";
 import Nosotros from "./pages/Nosotros";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
