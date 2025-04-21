@@ -18,7 +18,7 @@ function Footer() {
           <h3 className="text-xl font-semibold mb-3">Enlaces</h3>
           <ul className="space-y-2 font-nunito">
             <li><Link to="/" className="hover:underline">Inicio</Link></li>
-            <li><Link to="/destinos" className="hover:underline">Destinos</Link></li>
+            <li><Link to="/paquetes" className="hover:underline">Paquetes Turísticos</Link></li>
             <li><Link to="/quienes-somos" className="hover:underline">Quienes Somos</Link></li>
             <li><Link to="/contacto" className="hover:underline">Contacto</Link></li>
           </ul>

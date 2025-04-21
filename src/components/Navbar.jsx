@@ -17,9 +17,9 @@ function Navbar() {
           </span>
         </div>
         <div className="flex space-x-4 pr-4 text-white text-sm">
-          {/* <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
+          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
             <FaGoogle />
-          </a> */}
+          </a>
           <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
             <FaInstagram />
           </a>
@@ -36,8 +36,8 @@ function Navbar() {
             Turismo Up
           </Link>
           <div className="flex space-x-8 font-montserrat text-gris">
-            <Link to="/destinos" className="hover:text-petroleoClaro transition">
-              Destinos
+            <Link to="/paquetes" className="hover:text-petroleoClaro transition">
+              Paquetes Turísticos
             </Link>
             <Link to="/quienes-somos" className="hover:text-petroleoClaro transition">
               Quienes somos
