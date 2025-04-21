@@ -198,7 +198,9 @@ const Paquetes = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12">
           <div className="flex flex-col items-center text-center">
             <span className="text-3xl mb-2">💼</span>
-            <p className="text-gray-800 text-base">Asesor personalizado</p>
+            <p className="text-gray-800 text-base">
+              Asesoramiento personalizado
+            </p>
           </div>
           <div className="flex flex-col items-center text-center">
             <span className="text-3xl mb-2">🛏</span>
