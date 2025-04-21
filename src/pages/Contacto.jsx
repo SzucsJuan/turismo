@@ -1,6 +1,14 @@
+import { motion } from "framer-motion";
+
 function Contacto() {
   return (
-    <section className="bg-[#f4f4f4] py-20 px-6 font-montserrat">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="bg-[#f4f4f4] py-20 px-6 font-montserrat"
+    >
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
         <div className="lg:w-1/2 text-center lg:text-left">
           <h2 className="text-4xl font-bold text-petroleo mb-4">Contactanos</h2>
@@ -68,7 +76,7 @@ function Contacto() {
           </button>
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
