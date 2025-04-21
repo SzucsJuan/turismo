@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaCompass } from "react-icons/fa";
 import CallToAction from "../components/CallToAction";
 import StatsSection from "../components/StatsSection";
 
@@ -21,6 +21,7 @@ function Inicio() {
         </div>
       </section>
 
+      {/* Estadísticas */}
       <StatsSection />
 
       {/* Paquetes destacados */}
@@ -32,7 +33,7 @@ function Inicio() {
             { title: "Aventura en Bariloche", img: "/images/bariloche.jpg" },
             { title: "Europa Mágica", img: "/images/europa.jpeg" },
           ].map((paquete, i) => (
-            <div key={i} className="bg-white shadow-lg rounded-xl overflow-hidden">
+            <div key={i} className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
               <img src={paquete.img} alt={paquete.title} className="h-60 w-full object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-gris mb-2">{paquete.title}</h3>
@@ -45,6 +46,15 @@ function Inicio() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Link
+            to="/paquetes"
+            className="inline-flex items-center gap-2 bg-verde text-white font-semibold px-6 py-3 rounded-full hover:bg-petroleo transition-colors duration-300"
+          >
+            <FaCompass className="text-xl" />
+            Ver todos los paquetes
+          </Link>
         </div>
       </section>
 
@@ -83,7 +93,7 @@ function Inicio() {
         </div>
       </section>
 
-      {/* CTA final */}
+      {/* Call to Action */}
       <CallToAction />   
     </div>
   );
