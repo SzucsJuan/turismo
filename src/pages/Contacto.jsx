@@ -12,13 +12,13 @@ function Contacto() {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-12">
         <div className="lg:w-1/2 text-center lg:text-left">
           <h2 className="text-4xl font-bold text-petroleo mb-4">Contactanos</h2>
-          <p className="text-lg text-gray-700 mb-6">
+          <p className="text-lg font-nunito text-gray-700 mb-6">
             ¿Listo para vivir una experiencia inolvidable? Completá el
             formulario o escribinos por los canales disponibles. Nuestro equipo
             te responderá a la brevedad.
           </p>
 
-          <div className="space-y-4 text-gray-800">
+          <div className="font-nunito text-lg space-y-4 text-gray-800">
             <div className="flex items-center gap-3">
               <span className="text-2xl">📍</span>
               <p>Buenos Aires, Argentina</p>
@@ -35,7 +35,7 @@ function Contacto() {
         </div>
 
         {/* Formulario */}
-        <form className="lg:w-1/2 bg-white shadow-xl rounded-2xl p-8 w-full space-y-6">
+        <form className="lg:w-1/2 bg-white shadow-xl rounded-2xl p-8 w-full space-y-6 font-nunito">
           <div>
             <label className="block text-gray-800 mb-1 font-semibold">
               Nombre completo
@@ -70,7 +70,7 @@ function Contacto() {
 
           <button
             type="submit"
-            className="bg-petroleo text-white px-6 py-3 rounded-full hover:bg-verde transition duration-300"
+            className="bg-petroleo text-white font-montserrat px-6 py-3 rounded-full hover:bg-verde transition duration-300"
           >
             Enviar mensaje
           </button>

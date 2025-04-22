@@ -79,7 +79,7 @@ function Inicio() {
       </section>
 
       {/* Testimonios */}
-      <section className="py-16 bg-petroleoClaro text-white px-6">
+      {/* <section className="py-16 bg-petroleoClaro text-white px-6">
         <h2 className="text-3xl font-montserrat font-bold text-center mb-10">
           Nuestros viajeros opinan
         </h2>
@@ -116,7 +116,7 @@ function Inicio() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <CallToAction />

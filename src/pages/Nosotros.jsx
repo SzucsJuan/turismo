@@ -24,7 +24,7 @@ function Nosotros() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10"
+          className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10 font-nunito"
         >
           Somos un equipo de profesionales apasionados por diseñar experiencias
           de viaje inigualables. Combinamos elegancia, confort y planificación
@@ -44,7 +44,7 @@ function Nosotros() {
                 Experiencia
               </h3>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-700 font-nunito">
               Más de 10 años creando viajes personalizados para clientes
               exigentes alrededor del mundo.
             </p>
@@ -55,7 +55,7 @@ function Nosotros() {
               <CheckCircle className="text-petroleo w-6 h-6" />
               <h3 className="text-xl font-semibold text-petroleo">Calidad</h3>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-700 font-nunito">
               Trabajamos con los mejores proveedores, hoteles y aerolíneas para
               garantizar una experiencia de lujo.
             </p>
@@ -66,7 +66,7 @@ function Nosotros() {
               <ShieldCheck className="text-petroleo w-6 h-6" />
               <h3 className="text-xl font-semibold text-petroleo">Confianza</h3>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-700 font-nunito">
               Cada detalle es cuidadosamente planificado. Tu viaje soñado está
               en buenas manos.
             </p>
