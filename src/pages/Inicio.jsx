@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaQuoteLeft, FaStar, FaCompass } from "react-icons/fa";
+
 import CallToAction from "../components/CallToAction";
 import StatsSection from "../components/StatsSection";
 
@@ -10,8 +11,13 @@ function Inicio() {
       <section className="relative bg-[url('/images/hero-aventura.jpg')] bg-cover bg-center h-[80vh] flex items-center justify-center text-white text-center">
         <div className="bg-black/50 absolute inset-0"></div>
         <div className="relative z-10 max-w-2xl px-6">
-          <h1 className="text-4xl sm:text-5xl font-bold font-montserrat mb-6">Inspirate. Descubrí. Viajá.</h1>
-          <p className="mb-8 text-lg">Viví la experiencia de tus sueños con los mejores paquetes turísticos</p>
+          <h1 className="text-4xl sm:text-5xl font-bold font-montserrat mb-6">
+            Inspirate. Descubrí. Viajá.
+          </h1>
+          <p className="mb-8 text-lg">
+            Viví la experiencia de tus sueños con los mejores paquetes
+            turísticos
+          </p>
           <Link
             to="/paquetes"
             className="bg-verde hover:bg-petroleoClaro transition text-white py-3 px-6 rounded-full text-lg font-semibold"
@@ -26,17 +32,31 @@ function Inicio() {
 
       {/* Paquetes destacados */}
       <section className="py-16 px-6 bg-white">
-        <h2 className="text-3xl font-montserrat font-bold text-center text-petroleo mb-10">Paquetes destacados</h2>
+        <h2 className="text-3xl font-montserrat font-bold text-center text-petroleo mb-10">
+          Paquetes destacados
+        </h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            { title: "Riviera Maya Inolvidable", img: "/images/riviera-maya.jpg" },
+            {
+              title: "Riviera Maya Inolvidable",
+              img: "/images/riviera-maya.jpg",
+            },
             { title: "Aventura en Bariloche", img: "/images/bariloche.jpg" },
             { title: "Europa Mágica", img: "/images/europa.jpeg" },
           ].map((paquete, i) => (
-            <div key={i} className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
-              <img src={paquete.img} alt={paquete.title} className="h-60 w-full object-cover" />
+            <div
+              key={i}
+              className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105"
+            >
+              <img
+                src={paquete.img}
+                alt={paquete.title}
+                className="h-60 w-full object-cover"
+              />
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-gris mb-2">{paquete.title}</h3>
+                <h3 className="text-xl font-semibold text-gris mb-2">
+                  {paquete.title}
+                </h3>
                 <Link
                   to="/paquetes"
                   className="text-verde hover:text-petroleo font-semibold"
@@ -60,7 +80,9 @@ function Inicio() {
 
       {/* Testimonios */}
       <section className="py-16 bg-petroleoClaro text-white px-6">
-        <h2 className="text-3xl font-montserrat font-bold text-center mb-10">Nuestros viajeros opinan</h2>
+        <h2 className="text-3xl font-montserrat font-bold text-center mb-10">
+          Nuestros viajeros opinan
+        </h2>
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {[
             {
@@ -79,7 +101,10 @@ function Inicio() {
               stars: 4,
             },
           ].map((testimonial, i) => (
-            <div key={i} className="bg-white text-gris rounded-xl shadow-lg p-6 relative">
+            <div
+              key={i}
+              className="bg-white text-gris rounded-xl shadow-lg p-6 relative"
+            >
               <FaQuoteLeft className="text-petroleo text-2xl absolute top-4 left-4" />
               <p className="italic mt-4 mb-4">{testimonial.text}</p>
               <div className="flex justify-center mb-2">
@@ -94,7 +119,7 @@ function Inicio() {
       </section>
 
       {/* Call to Action */}
-      <CallToAction />   
+      <CallToAction />
     </div>
   );
 }

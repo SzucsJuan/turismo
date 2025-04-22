@@ -1,67 +1,8 @@
+import { Plane } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Plane } from "lucide-react";
 
-const paquetes = [
-  {
-    title: "Riviera Maya Inolvidable",
-    descripcion:
-      "7 noches en resort all-inclusive con excursiones a cenotes y ruinas mayas.",
-    precio: 1200,
-    img: "/images/riviera-maya.jpg",
-    destino: "Riviera Maya",
-    experiencia: "Relax",
-    duracion: 7,
-  },
-  {
-    title: "Aventura en Bariloche",
-    descripcion:
-      "5 días de paisajes patagónicos, excursiones y chocolate artesanal.",
-    precio: 950,
-    img: "/images/bariloche.jpg",
-    destino: "Bariloche",
-    experiencia: "Aventura",
-    duracion: 5,
-  },
-  {
-    title: "Europa Mágica",
-    descripcion:
-      "15 días recorriendo París, Roma y Barcelona con guía y alojamiento.",
-    precio: 3200,
-    img: "/images/europa.jpeg",
-    destino: "Europa",
-    experiencia: "Cultural",
-    duracion: 15,
-  },
-  {
-    title: "Cataratas del Iguazú",
-    descripcion:
-      "3 noches con visita al parque nacional, alojamiento y traslados incluidos.",
-    precio: 800,
-    img: "/images/cataratas.jpg",
-    destino: "Iguazú",
-    experiencia: "Aventura",
-    duracion: 3,
-  },
-  {
-    title: "Fiesta en Río de Janeiro",
-    descripcion: "5 noches en Copacabana con entradas al Carnaval y city tour.",
-    precio: 1100,
-    img: "/images/rio-janeiro.jpg",
-    destino: "Río de Janeiro",
-    experiencia: "Fiesta",
-    duracion: 5,
-  },
-  {
-    title: "Mendoza & Vinos",
-    descripcion: "Recorrido en bodegas, degustaciones y spa en la montaña.",
-    precio: 890,
-    img: "/images/mendoza.jpg",
-    destino: "Mendoza",
-    experiencia: "Relax",
-    duracion: 4,
-  },
-];
+import paquetes from "../mocks/paquetes";
 
 const Paquetes = () => {
   // Estados para los filtros
@@ -175,9 +116,12 @@ const Paquetes = () => {
                 <span className="block text-verde font-bold text-lg mb-2">
                   Desde USD {p.precio}
                 </span>
-                <button className="bg-verde text-white px-4 py-2 rounded-full hover:bg-petroleo transition-colors duration-300">
+                <Link
+                  to={`/paquetes/${i + 1}`}
+                  className="bg-verde text-white px-4 py-2 rounded-full hover:bg-petroleo transition-colors duration-300"
+                >
                   Ver detalle
-                </button>
+                </Link>
               </div>
             </div>
           ))}
