@@ -65,21 +65,21 @@ const PaqueteDetalle = () => {
         </div>
 
         <div className="mt-12 bg-gray-50 p-8 rounded-2xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
-  <div className="flex items-center gap-4 text-petroleo">
-    <p className="text-3xl font-bold">
-      Desde <span className="text-petroleo">USD {paquete.precio}</span>
-    </p>
-  </div>
+          <div className="flex items-center gap-4 text-petroleo">
+            <p className="text-3xl font-bold">
+              Desde <span className="text-petroleo">USD {paquete.precio}</span>
+            </p>
+          </div>
 
-  <Link
-    to="/contacto"
-    className="flex items-center gap-3 bg-verde hover:bg-petroleo text-white px-6 py-3 rounded-full text-lg font-medium shadow-md transition"
-  >
-    <FaSuitcaseRolling className="text-xl" />
-    Reservar ahora
-  </Link>
-</div>
-        {/* Itinerario */}
+          <Link
+            to="/contacto"
+            className="flex items-center gap-3 bg-verde hover:bg-petroleo text-white px-6 py-3 rounded-full text-lg font-medium shadow-md transition"
+          >
+            <FaSuitcaseRolling className="text-xl" />
+            Reservar ahora
+          </Link>
+        </div>
+
         <section className="mt-16">
           <h2 className="text-3xl font-semibold text-petroleo mb-4">
             Itinerario
@@ -93,7 +93,6 @@ const PaqueteDetalle = () => {
           </ul>
         </section>
 
-        {/* Servicios incluidos */}
         <section className="mt-12">
           <h2 className="text-3xl font-semibold text-petroleo mb-4">
             Servicios incluidos
