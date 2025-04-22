@@ -23,6 +23,10 @@ const paquetes = [
       "Desayuno incluido",
       "Asistencia al viajero",
     ],
+    ubicacion: {
+      lat: 21.138061,
+      long: -86.891794,
+    },
   },
   {
     id: 2,
@@ -48,6 +52,10 @@ const paquetes = [
       "Desayuno incluido",
       "Asistencia al viajero",
     ],
+    ubicacion: {
+      lat: -41.133999,
+      long: -71.309531,
+    },
   },
   {
     id: 3,
@@ -73,6 +81,10 @@ const paquetes = [
       "Desayuno incluido",
       "Asistencia al viajero",
     ],
+    ubicacion: {
+      lat: 48.8566,
+      long: 2.3522,
+    },
   },
   {
     id: 4,
@@ -98,6 +110,10 @@ const paquetes = [
       "Desayuno incluido",
       "Asistencia al viajero",
     ],
+    ubicacion: {
+      lat: -25.664962,
+      long: -54.448972,
+    },
   },
   {
     id: 5,
@@ -122,6 +138,10 @@ const paquetes = [
       "Desayuno incluido",
       "Asistencia al viajero",
     ],
+    ubicacion: {
+      lat: -22.903966,
+      long: -43.178944,
+    },
   },
   {
     id: 6,
@@ -146,6 +166,10 @@ const paquetes = [
       "Desayuno incluido",
       "Asistencia al viajero",
     ],
+    ubicacion: {
+      lat: -32.889252,
+      long: -68.847388,
+    },
   },
 ];
 

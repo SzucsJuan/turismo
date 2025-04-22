@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { FaSuitcaseRolling } from "react-icons/fa";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 import paquetes from "../mocks/paquetes";
 
@@ -11,7 +12,7 @@ const PaqueteDetalle = () => {
 
   if (!paquete) {
     return (
-      <p className="text-center py-20 text-red-500 text-xl">
+      <p className="text-center font-nunito py-20 text-red-500 text-xl">
         Paquete no encontrado.
       </p>
     );
@@ -57,7 +58,9 @@ const PaqueteDetalle = () => {
             </p>
           </div>
           <div className="bg-gray-50 p-6 rounded-xl shadow">
-            <h3 className="text-sm text-gray-500 font-nunito">Tipo de experiencia</h3>
+            <h3 className="text-sm text-gray-500 font-nunito">
+              Tipo de experiencia
+            </h3>
             <p className="text-lg font-montserrat font-bold text-petroleo">
               {paquete.experiencia}
             </p>
@@ -99,12 +102,41 @@ const PaqueteDetalle = () => {
           </h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-gray-700">
             {paquete.servicios.map((item, index) => (
-              <li key={index} className="flex items-start gap-2 font-nunito text-lg">
+              <li
+                key={index}
+                className="flex items-start gap-2 font-nunito text-lg"
+              >
                 <span className="text-verde mt-1">✓</span>
                 {item}
               </li>
             ))}
           </ul>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mb-4">
+            Ubicación del destino
+          </h2>
+
+          <div className="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
+            <MapContainer
+              center={[paquete.ubicacion.lat, paquete.ubicacion.long]}
+              zoom={13}
+              scrollWheelZoom={false}
+              className="h-full w-full"
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker
+                position={[paquete.ubicacion.lat, paquete.ubicacion.long]}
+              >
+                {" "}
+                <Popup>{paquete.destino}</Popup>{" "}
+              </Marker>
+            </MapContainer>
+          </div>
         </section>
       </div>
     </main>
