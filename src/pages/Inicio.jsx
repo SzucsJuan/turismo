@@ -20,7 +20,7 @@ function Inicio() {
           </p>
           <Link
             to="/paquetes"
-            className="bg-verde hover:bg-petroleoClaro transition text-white py-3 px-6 rounded-full text-lg font-semibold"
+            className="bg-verde hover:bg-petroleo transition text-white py-3 px-6 rounded-full text-lg font-semibold"
           >
             Conocé nuestros destinos
           </Link>
@@ -46,7 +46,7 @@ function Inicio() {
           ].map((paquete, i) => (
             <div
               key={i}
-              className="bg-white shadow-lg rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105"
+              className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               <img
                 src={paquete.img}

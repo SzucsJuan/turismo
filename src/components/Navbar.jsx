@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaEnvelope, FaPhone, FaFacebookF, FaInstagram, FaGoogle, } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaFacebookF,
+  FaInstagram,
+  FaGoogle,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -17,13 +23,22 @@ function Navbar() {
           </span>
         </div>
         <div className="flex space-x-4 pr-4 text-white text-sm">
-          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
+          <a
+            href="#"
+            className="transform transition-all duration-200 ease-in-out hover:scale-105"
+          >
             <FaGoogle />
           </a>
-          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
+          <a
+            href="#"
+            className="transform transition-all duration-200 ease-in-out hover:scale-105"
+          >
             <FaInstagram />
           </a>
-          <a href="#" className="transform transition-all duration-200 ease-in-out hover:scale-105">
+          <a
+            href="#"
+            className="transform transition-all duration-200 ease-in-out hover:scale-105"
+          >
             <FaFacebookF />
           </a>
         </div>
@@ -32,17 +47,29 @@ function Navbar() {
       {/* Barra principal */}
       <nav className="bg-white text-gray-800 px-6 py-4">
         <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" className="text-2xl font-montserrat font-bold text-verde">
+          <Link
+            to="/"
+            className="text-2xl font-montserrat font-bold text-verde"
+          >
             Turismo Up
           </Link>
           <div className="flex space-x-8 font-montserrat text-gris">
-            <Link to="/paquetes" className="hover:text-petroleoClaro transition">
+            <Link
+              to="/paquetes"
+              className="hover:text-petroleoClaro transition"
+            >
               Paquetes Turísticos
             </Link>
-            <Link to="/quienes-somos" className="hover:text-petroleoClaro transition">
+            <Link
+              to="/quienes-somos"
+              className="hover:text-petroleoClaro transition"
+            >
               Quienes somos
             </Link>
-            <Link to="/contacto" className="hover:text-petroleoClaro transition">
+            <Link
+              to="/contacto"
+              className="hover:text-petroleoClaro transition"
+            >
               Contacto
             </Link>
           </div>

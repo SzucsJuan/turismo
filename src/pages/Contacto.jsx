@@ -70,7 +70,7 @@ function Contacto() {
 
           <button
             type="submit"
-            className="bg-petroleo text-white font-montserrat px-6 py-3 rounded-full hover:bg-verde transition duration-300"
+            className="bg-verde text-white font-montserrat px-6 py-3 rounded-full hover:bg-petroleo transition duration-300"
           >
             Enviar mensaje
           </button>

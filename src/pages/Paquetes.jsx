@@ -101,27 +101,33 @@ const Paquetes = () => {
           {paquetesFiltrados.map((p, i) => (
             <div
               key={i}
-              className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
             >
               <img
                 src={p.img}
                 alt={p.title}
                 className="h-56 w-full object-cover"
               />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gris mb-2">
-                  {p.title}
-                </h3>
-                <p className="text-gray-600 text-sm mb-4">{p.descripcion}</p>
-                <span className="block text-verde font-bold text-lg mb-2">
-                  Desde USD {p.precio}
-                </span>
-                <Link
-                  to={`/paquetes/${i + 1}`}
-                  className="bg-verde text-white px-4 py-2 rounded-full hover:bg-petroleo transition-colors duration-300"
-                >
-                  Ver detalle
-                </Link>
+
+              <div className="p-6 flex flex-col flex-1">
+                <div className="mb-4">
+                  <h3 className="text-2xl font-semibold text-gris mb-2">
+                    {p.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4">{p.descripcion}</p>
+                  <span className="block text-verde font-bold text-lg">
+                    Desde USD {p.precio}
+                  </span>
+                </div>
+
+                <div className="mt-auto text-right">
+                  <Link
+                    to={`/paquetes/${i + 1}`}
+                    className="bg-verde text-white text-sm px-3 py-1.5 rounded-full hover:bg-petroleo transition-colors duration-300"
+                  >
+                    Ver detalle
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
@@ -165,7 +171,7 @@ const Paquetes = () => {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
             to="/contacto"
-            className="bg-petroleo text-white px-8 py-3 rounded-full hover:bg-verde transition duration-300"
+            className="bg-verde text-white px-8 py-3 rounded-full hover:bg-petroleo transition duration-300"
           >
             Consultanos
           </Link>

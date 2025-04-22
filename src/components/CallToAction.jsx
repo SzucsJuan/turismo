@@ -11,7 +11,7 @@ function CallToAction() {
           href="https://wa.me/5491167582349"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-verde font-bold font-nunito px-6 py-3 rounded-full hover:bg-petroleoClaro hover:text-white transition"
+          className="inline-block bg-white text-verde font-bold font-nunito px-6 py-3 rounded-full hover:bg-petroleo hover:text-white transition"
         >
           Consultar por WhatsApp
         </a>

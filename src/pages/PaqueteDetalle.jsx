@@ -84,10 +84,10 @@ const PaqueteDetalle = () => {
         </div>
 
         <section className="mt-16">
-          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mb-4">
+          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mt-14">
             Itinerario
           </h2>
-          <ul className="space-y-3 list-disc list-inside text-gray-700">
+          <ul className="space-y-3 list-disc list-inside text-gray-700 mt-4">
             {paquete.itinerario.map((item, index) => (
               <li key={index} className="text-lg font-nunito">
                 {item}
@@ -97,10 +97,10 @@ const PaqueteDetalle = () => {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mb-4">
+          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mt-8">
             Servicios incluidos
           </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-gray-700">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-gray-700 mt-4">
             {paquete.servicios.map((item, index) => (
               <li
                 key={index}
@@ -114,11 +114,11 @@ const PaqueteDetalle = () => {
         </section>
 
         <section className="mt-16">
-          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mb-4">
+          <h2 className="text-3xl font-montserrat font-semibold text-petroleo mt-8">
             Ubicación del destino
           </h2>
 
-          <div className="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg">
+          <div className="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg mt-4">
             <MapContainer
               center={[paquete.ubicacion.lat, paquete.ubicacion.long]}
               zoom={13}
