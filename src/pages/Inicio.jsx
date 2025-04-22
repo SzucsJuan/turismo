@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaQuoteLeft, FaStar, FaCompass } from "react-icons/fa";
 
+import paquetes from "../mocks/paquetes";
 import CallToAction from "../components/CallToAction";
 import StatsSection from "../components/StatsSection";
 
@@ -22,7 +23,7 @@ function Inicio() {
             to="/paquetes"
             className="bg-verde hover:bg-petroleo transition text-white py-3 px-6 rounded-full text-lg font-semibold"
           >
-            Conocé nuestros destinos
+            Conocé nuestros paquetes
           </Link>
         </div>
       </section>
@@ -38,11 +39,20 @@ function Inicio() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
+              id: 1,
               title: "Riviera Maya Inolvidable",
               img: "/images/riviera-maya.jpg",
             },
-            { title: "Aventura en Bariloche", img: "/images/bariloche.jpg" },
-            { title: "Europa Mágica", img: "/images/europa.jpeg" },
+            { 
+              id: 2,
+              title: "Aventura en Bariloche", 
+              img: "/images/bariloche.jpg" 
+            },
+            { 
+              id: 3,
+              title: "Europa Mágica", 
+              img: "/images/europa.jpeg" 
+            },
           ].map((paquete, i) => (
             <div
               key={i}
@@ -58,7 +68,7 @@ function Inicio() {
                   {paquete.title}
                 </h3>
                 <Link
-                  to="/paquetes"
+                  to={`/paquetes/${paquete.id}`}
                   className="text-verde hover:text-petroleo font-semibold"
                 >
                   Ver más →
